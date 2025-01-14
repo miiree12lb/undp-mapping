@@ -1,0 +1,41 @@
+{
+    "homepage": "https://miiree12lb.github.io/undp-mapping/",
+    "name": "undp-mapping",
+    "source": "index.html",
+    "scripts": {
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "test": "react-scripts test",
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d build"
+    },
+    "dependencies": {
+        "leaflet": "^1.9.4",
+        "npm": "^10.2.4",
+        "papaparse": "^5.5.1",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "react-icons": "^5.4.0",
+        "react-leaflet": "^4.2.1",
+        "react-router-dom": "^6.19.0",
+        "react-scripts": "^5.0.1",
+        "run": "^1.4.0",
+        "start": "^5.1.0"
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    },
+    "devDependencies": {
+        "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+        "gh-pages": "^6.1.0"
+    }
+}
