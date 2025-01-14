@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/undp-mapping/static/css/main.47b4f647.css",
-    "main.js": "/undp-mapping/static/js/main.cabbc88d.js",
+    "main.css": "/undp-mapping/static/css/main.ea28737e.css",
+    "main.js": "/undp-mapping/static/js/main.240febf1.js",
     "static/media/2021.png": "/undp-mapping/static/media/2021.ff09aa4ef2c8e74e29bd.png",
     "static/media/2022.png": "/undp-mapping/static/media/2022.d5204d3b3cee638753d2.png",
     "static/media/2017.png": "/undp-mapping/static/media/2017.3e7c67ef8fde547d772d.png",
     "static/media/logo.png": "/undp-mapping/static/media/logo.52133d82651a2e4a37fb.png",
-    "static/media/joined2022.csv": "/undp-mapping/static/media/joined2022.e06570fe2f111e1ee4a2.csv",
-    "static/media/joined2021.csv": "/undp-mapping/static/media/joined2021.494d6584c9312a0d9d32.csv",
-    "static/media/joined2017.csv": "/undp-mapping/static/media/joined2017.18a2ed36d16e33f9c3be.csv",
+    "static/media/joined2022.csv": "/undp-mapping/static/media/joined2022.e7148005b1e733e02c6b.csv",
+    "static/media/joined2021.csv": "/undp-mapping/static/media/joined2021.dccf24fed4f967662ef4.csv",
+    "static/media/joined2017.csv": "/undp-mapping/static/media/joined2017.8aae741b854829a58d44.csv",
     "index.html": "/undp-mapping/index.html",
-    "main.47b4f647.css.map": "/undp-mapping/static/css/main.47b4f647.css.map",
-    "main.cabbc88d.js.map": "/undp-mapping/static/js/main.cabbc88d.js.map"
+    "main.ea28737e.css.map": "/undp-mapping/static/css/main.ea28737e.css.map",
+    "main.240febf1.js.map": "/undp-mapping/static/js/main.240febf1.js.map"
   },
   "entrypoints": [
-    "static/css/main.47b4f647.css",
-    "static/js/main.cabbc88d.js"
+    "static/css/main.ea28737e.css",
+    "static/js/main.240febf1.js"
   ]
 }
