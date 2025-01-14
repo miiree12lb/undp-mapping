@@ -5,9 +5,12 @@ import "leaflet/dist/leaflet.css";
 import file2017 from "./assets/data/joined2017.csv";
 import file2021 from "./assets/data/joined2021.csv";
 import file2022 from "./assets/data/joined2022.csv";
+import { useMediaQuery } from "react-responsive";
 
 const ProportionalSymbolMap = ({ year }) => {
-  const [data, setData] = useState([]);
+  const isDesktop = useMediaQuery({ minWidth: 801 });
+  const [mapWidth, setMapWidth] = useState(window.innerWidth);
+
   const fileMapping = {
     2017: file2017,
     2021: file2021,
@@ -15,6 +18,7 @@ const ProportionalSymbolMap = ({ year }) => {
   };
   const columnName = `gni_pc_m_${year}`;
   const csvData = fileMapping[year];
+  const [data, setData] = useState([]);
 
   useEffect(() => {
     if (csvData) {
@@ -27,11 +31,23 @@ const ProportionalSymbolMap = ({ year }) => {
     }
   }, [csvData]);
 
+  useEffect(() => {
+    const handleResize = () => {
+      setMapWidth(window.innerWidth);
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   const scaleSize = (value) => Math.sqrt(value) / 10; // Adjust as necessary
 
   return (
     <MapContainer
-      style={{ height: "500px", width: "100%" }}
+      style={{
+        height: "500px",
+        width: isDesktop ? `${mapWidth * 0.25}px` : `${mapWidth * 0.9}px`,
+      }}
       center={[0, 20]} // Coordinates for Africa
       zoom={3}
     >
